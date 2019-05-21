@@ -1,0 +1,57 @@
+---
+permalink: /
+---
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta property="theme-color" content="#0066ff">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Galaxy Life Reborn" />
+	<meta property="og:description" content="Welcome to Galaxy Life Reborn !" />
+	<meta property="og:url" content="https://jeuxdictator.github.io/glr/" />
+	<meta property="og:image" content="https://jeuxdictator.github.io/glr/logo.png" />
+	<title>Galaxy Life Reborn</title>
+	<link href="https://jeuxdictator.github.io/glr/logo.png" rel="shortcut icon" type="image/png">
+	<link href="https://jeuxdictator.github.io/glr/index.css" rel="stylesheet">
+	<script type="text/javascript">
+		var isMobileDevice = navigator.userAgent.match(/iPad|iPhone|iPod/i) != null || screen.width <= 480;
+		function mobile() {
+			if (isMobileDevice) {
+				window.location.href ="https://jeuxdictator.github.io/glr/m/";
+				console.log("mobile");
+			}else{
+				document.getElementById('bod').style.display = "block";
+				document.getElementById('load').style.display = "none";
+				console.log("not mobile");
+			}
+		}
+		window.onload = mobile;
+	</script>
+</head>
+
+<body>
+	<noscript>
+		<h1 style="font-size:18px;">Pour pouvoir accèder au site, merci d'activer JavaScript !</h1>
+	</noscript>
+	<center style="display: block;">
+		<img class="load" src="https://jeuxdictator.github.io/glr/name.png" id="load" alt="Galaxy Life" style="display: block; color: #0066ff; font-size:18px;"></img>
+	</center>
+	<div id="bod" style="display: none;">
+		<div class="responsive-headline">
+			<img src="https://jeuxdictator.github.io/glr/name.png" alt="Galaxy Life" style="height: 58.5px; width: 225px; margin-left: auto; margin-right: auto; margin-top: 1%; display: block; color: #0066ff;"></img>
+		</div>
+		<center>
+			<ul class="menu">
+				<li class="li-menu"><a class="menu-link active">Accueil</a></li>
+				<li class="li-menu"><a href="https://jeuxdictator.github.io/sk/rules/" class="menu-link">Les règles</a></li>
+				<li class="li-menu"><a href="https://jeuxdictator.github.io/sk/serveur/" class="menu-link">Serveur</a></li>
+			</ul>
+			<h2>Le site web de la Team SK_.</h2><br>
+			<footer>
+				<div><a class ="pfooter">developped by </a><a class="pfooter" href="https://jeuxdictator.github.io/">Jéhèndé</a></div>
+			</footer>
+		</center>
+	 
+	</div>
+</body>
+</html>
