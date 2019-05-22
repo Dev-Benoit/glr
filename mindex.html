@@ -1,5 +1,5 @@
 ---
-permalink: /fr/
+permalink: /fr/m/
 ---
 <html lang="fr">
 <head>
@@ -11,13 +11,14 @@ permalink: /fr/
 	<meta property="og:url" content="https://jeuxdictator.github.io/glr/fr/" />
 	<meta property="og:image" content="https://jeuxdictator.github.io/glr/logo.png" />
 	<title>Galaxy Life Reborn</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://jeuxdictator.github.io/glr/logo.png" rel="shortcut icon" type="image/png">
 	<link href="https://jeuxdictator.github.io/glr/index.css" rel="stylesheet">
 	<script type="text/javascript">
 		var isMobileDevice = navigator.userAgent.match(/iPad|iPhone|iPod/i) != null || screen.width <= 480;
 		function mobile() {
-			if (isMobileDevice) {
-				window.location.href ="https://jeuxdictator.github.io/glr/fr/m/";
+			if (!isMobileDevice) {
+				window.location.href ="https://jeuxdictator.github.io/glr/fr/";
 				console.log("mobile");
 			}else{
 				document.getElementById('bod').style.display = "block";
@@ -25,6 +26,14 @@ permalink: /fr/
 				console.log("not mobile");
 			}
 		}
+		function extend() {
+			var x = document.getElementById("menu");
+			if (x.className === "menu") {
+				x.className += " responsive";
+			}else{
+				x.className = "menu";
+			}
+		} 
 		window.onload = mobile;
 	</script>
 </head>
@@ -41,12 +50,15 @@ permalink: /fr/
 			<img src="https://jeuxdictator.github.io/glr/name.png" alt="Galaxy Life" style="height: 65px; width: 193px; margin-left: auto; margin-right: auto; display: block; color: #0066ff;"></img>
 		</div>
 		<center>
-			<ul class="menu">
-				<li class="li-menu"><a class="menu-link active">Accueil</a></li>
-				<li class="li-menu"><a href="https://jeuxdictator.github.io/glr/fr/rules/" class="menu-link">Les règles</a></li>
-				<li class="li-menu"><a href="https://jeuxdictator.github.io/glr/fr/serveur/" class="menu-link">Jouer</a></li>
-				<li class="li-menu"><a href="https://jeuxdictator.github.io/glr/fr/discord/" class="menu-link">Discord</a></li>
-			</ul>
+			<div class="menu" id="menu">
+				<a class="active">Accueil</a>
+				<a href="https://jeuxdictator.github.io/glr/fr/m/rules/" class="menu-link">Les règles</a>
+				<a href="https://jeuxdictator.github.io/glr/fr/m/serveur/" class="menu-link">Jouer</a>
+				<a href="https://jeuxdictator.github.io/glr/fr/m/discord/" class="menu-link">discord</a>
+				<a href="javascript:void(0);" class="icon" onclick="extend()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 			<h2>Le site web (non-officiel) de Galaxy Life Reborn</h2>
 			<footer>
 				<br>
