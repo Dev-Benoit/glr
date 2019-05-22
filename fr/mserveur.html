@@ -1,0 +1,76 @@
+---
+permalink: /fr/m/serveur/
+---
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta property="theme-color" content="#0066ff">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Galaxy Life Reborn" />
+	<meta property="og:description" content="Here is the informations you need to know to play Galaxy Life Reborn !" />
+	<meta property="og:url" content="https://jeuxdictator.github.io/glr/fr/serveur/" />
+	<meta property="og:image" content="https://jeuxdictator.github.io/glr/logo.png" />
+	<title>Galaxy Life Reborn</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://jeuxdictator.github.io/glr/logo.png" rel="shortcut icon" type="image/png">
+	<link href="https://jeuxdictator.github.io/glr/index.css" rel="stylesheet">
+	<script type="text/javascript">
+		var isMobileDevice = navigator.userAgent.match(/iPad|iPhone|iPod/i) != null || screen.width <= 480;
+		function mobile() {
+			if (!isMobileDevice) {
+				window.location.href ="https://jeuxdictator.github.io/glr/fr/serveur/";
+				console.log("mobile");
+			}else{
+				document.getElementById('bod').style.display = "block";
+				document.getElementById('load').style.display = "none";
+				console.log("not mobile");
+			}
+		}
+		function extend() {
+			var x = document.getElementById("menu");
+			if (x.className === "menu") {
+				x.className += " responsive";
+			}else{
+				x.className = "menu";
+			}
+		} 
+		window.onload = mobile;
+	</script>
+</head>
+
+<body>
+	<noscript>
+		<h1 style="font-size:18px;">Pour pouvoir accèder au site, merci d'activer JavaScript !</h1>
+	</noscript>
+	<center style="display: block;">
+		<img class="load" src="https://jeuxdictator.github.io/glr/name.png" id="load" alt="Galaxy Life" style="display: block; color: #0066ff; font-size:18px;"></img>
+	</center>
+	<div id="bod" style="display: none;">
+		<div class="responsive-headline">
+			<img src="https://jeuxdictator.github.io/glr/name.png" alt="Galaxy Life" style="height: 65px; width: 193px; margin-left: auto; margin-right: auto; display: block; color: #0066ff;"></img>
+		</div>
+		<center>
+			<ul class="menu" id="menu">
+				<li class="li-menu"><a href="https://jeuxdictator.github.io/glr/fr/" class="menu-link ">Accueil</a></li>
+				<li class="li-menu"><a href="https://jeuxdictator.github.io/glr/fr/rules/" class="menu-link">Les règles</a></li>
+				<li class="li-menu"><a class=" active">Jouer</a></li>
+				<li class="li-menu"><a href="https://jeuxdictator.github.io/glr/fr/discord/" class="menu-link">Discord</a></li>
+				<a href="javascript:void(0);" class="icon" onclick="extend()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</ul>
+			<h1>Actuellement, il existe que la version andoid d'ouverte au publique</h1>
+			<h2>Voici le lien où trouver la version android : </h2>
+			<a href="https://fainbory.com/21400751/galaxyliferebornv2" class="menu-link" style="color: black; text-decoration: none; background-color: #4CAF50;">Ici</a><br>
+			<a>si vous êtes un bêta testeur cependant, voici le jeu :</a><br>
+			<iframe src="https://galaxylifereborn.com/" style="height : 550px; width : 550px;"></iframe>
+			<footer>
+				<br>
+				<a href="https://jeuxdictator.github.io/glr/" style="text-decoration: none; color: black;">Switch langugage (auto detection)</a><br></br>
+				<div><a class ="pfooter">developped by </a><a class="pfooter" href="https://jeuxdictator.github.io/">Jéhèndé</a></div>
+			</footer>
+		</center>
+	 
+	</div>
+</body>
+</html>

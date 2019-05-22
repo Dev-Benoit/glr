@@ -1,0 +1,83 @@
+---
+permalink: /fr/m/discord/
+---
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta property="theme-color" content="#0066ff">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Galaxy Life Reborn" />
+	<meta property="og:description" content="Here is the discord server Galaxy Life Reborn !" />
+	<meta property="og:url" content="https://jeuxdictator.github.io/glr/fr/discord/" />
+	<meta property="og:image" content="https://jeuxdictator.github.io/glr/logo.png" />
+	<title>Galaxy Life Reborn</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://jeuxdictator.github.io/glr/logo.png" rel="shortcut icon" type="image/png">
+	<link href="https://jeuxdictator.github.io/glr/index.css" rel="stylesheet">
+	<script type="text/javascript">
+		var isMobileDevice = navigator.userAgent.match(/iPad|iPhone|iPod/i) != null || screen.width <= 480;
+		function mobile() {
+			if (!isMobileDevice) {
+				window.location.href ="https://jeuxdictator.github.io/glr/fr/discord/";
+				console.log("mobile");
+			}else{
+				document.getElementById('bod').style.display = "block";
+				document.getElementById('load').style.display = "none";
+				console.log("not mobile");
+			}
+		}
+		function extend() {
+			var x = document.getElementById("menu");
+			if (x.className === "menu") {
+				x.className += " responsive";
+			}else{
+				x.className = "menu";
+			}
+		} 
+		window.onload = mobile;
+	</script>
+</head>
+
+<body>
+	<noscript>
+		<h1 style="font-size:18px;">Pour pouvoir accèder au site, merci d'activer JavaScript !</h1>
+	</noscript>
+	<center style="display: block;">
+		<img class="load" src="https://jeuxdictator.github.io/glr/name.png" id="load" alt="Galaxy Life" style="display: block; color: #0066ff; font-size:18px;"></img>
+	</center>
+	<div id="bod" style="display: none;">
+		<div class="responsive-headline">
+			<img src="https://jeuxdictator.github.io/glr/name.png" alt="Galaxy Life" style="height: 65px; width: 193px; margin-left: auto; margin-right: auto; display: block; color: #0066ff;"></img>
+		</div>
+		<center>
+			<div class="menu" id="menu">
+				<a href="https://jeuxdictator.github.io/sk/fr/m/" class="menu-link">Accueil</a>
+				<a href="https://jeuxdictator.github.io/glr/fr/m/rules/" class="menu-link">Les règles</a>
+				<a href="https://jeuxdictator.github.io/sk/fr/m/serveur/" class="menu-link">Jouer</a>
+				<a class="active">discord</a>
+				<a href="javascript:void(0);" class="icon" onclick="extend()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+            <h2>Voici le lien d'invitation du serveur discord de Galaxy Life Reborn</h2>
+            
+			<div>
+                    <center>
+                        <div>
+                            <h2 style="display: inline; margin-top: 50%; margin-bottom: 50%;">Serveur Discord</h2>
+                            <img src="https://jeuxdictator.github.io/glr/logo.png" alt="Icône du serveur" style="display: inline; border-radius: 50%; width: 128px; height: 128px;"></img>
+                        </div>
+                    </center>
+                    <a class="menu-link" href="https://discord.gg/Rk72JzJ" style="color: black; text-decoration: none; background-color: #4CAF50;">Cliquez ici pour être invité sur le serveur</a><br></br>
+                    <p>(peut-être qu'un jour, si je peux, j'essayerai de mettre un widget)</p>
+                </div>
+			<footer>
+				<br>
+				<a href="https://jeuxdictator.github.io/glr/" style="text-decoration: none; color: black;">Switch langugage (auto detection)</a><br></br>
+				<div><a class ="pfooter">developped by </a><a class="pfooter" href="https://jeuxdictator.github.io/">Jéhèndé</a></div>
+			</footer>
+		</center>
+	 
+	</div>
+</body>
+</html>
